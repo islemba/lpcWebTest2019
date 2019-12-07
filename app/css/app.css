@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,300');
+html,body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat' ,sans-serif;
+}
+.content{
+  margin: 2%;
+}
+.lang-choice-container{
+  display: flex;
+  justify-content: center;
+}
+.lang-choice-container a{
+  text-decoration: none;
+  margin: 15px;
+}
+
+.selected:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  padding-top: 10px;
+  border-bottom: 3px solid darkorange;
+}
+h1{
+  text-align: center;
+}
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+  margin: 0 150px;
+}
+
+.col {
+}
+.pot-item{
+  display: flex;
+  flex-direction: column;
+  height: 130px;
+  background-image: linear-gradient(
+          to top,
+          black, white 50%);
+}
+
+.BackgroundImage {
+  width: 100%;
+  height: 100%;
+}
+
+.pot-name {
+  position: relative;
+  top: 129px;
+  text-align: center;
+  color: white
+}
+@media screen and (max-width: 735px)
+{
+  .row {
+    display: grid;
+    grid-template-columns:  1fr;
+    grid-gap: 15px;
+    margin: 0 10px;
+  }
+}
+
+
+/*TODO*/
